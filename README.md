@@ -214,6 +214,10 @@ The core model is a **1D CNN** operating on audio feature vectors (MFCCs):
 
 > 🏆 Best model: **Full Multimodal Fusion (tav) at 79.51%** — achieved with early stopping at epoch 16.
 
+![Training Results](training_results.png)
+
+---
+
 ## 🎤 Real-Time Demo
 
 ```bash
