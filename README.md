@@ -202,15 +202,17 @@ The core model is a **1D CNN** operating on audio feature vectors (MFCCs):
 
 > Results on IEMOCAP (4-class: Angry, Sad, Happy, Neutral):
 
-| Model | Accuracy | Weighted F1 |
-|-------|----------|-------------|
-| 1D CNN (MFCC features) | — | — |
-| CNN (Mel-Spectrogram) | — | — |
-| CNN (Log-Mel) | — | — |
+| Modality | Description | Accuracy |
+|----------|-------------|----------|
+| t | Text only | 78.40% |
+| a | Audio only | 78.95% |
+| v | Video only | 78.95% |
+| ta | Text + Audio | 78.84% |
+| tv | Text + Video | 78.62% |
+| av | Audio + Video | 78.51% |
+| **tav** | **Text + Audio + Video (Full Fusion)** | **79.51%** ✅ |
 
-*Update this table after running `test_new.py`.*
-
----
+> 🏆 Best model: **Full Multimodal Fusion (tav) at 79.51%** — achieved with early stopping at epoch 16.
 
 ## 🎤 Real-Time Demo
 
